@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	
+
+	<context:annotation-config></context:annotation-config>	
+	
+	<context:component-scan base-package="com.capgemini.model"></context:component-scan>
+	
+	<bean id="address" class="com.capgemini.model.Address">
+		<property name="city" value="Kolhapur"></property>
+		<property name="street" value="Rajarampuri 5th lane"></property>
+		<property name="pincode" value="764387"></property>
+	</bean>
+	
+	<!-- <bean id="employee" class="com.capgemini.model.Employee">
+		<property name="employeeNumber" value="101"></property>
+		<property name="name" value="Priyanka"></property>
+		  <property name="address" ref="address"></property> reffered another bean into this bean
+	</bean>  -->
+	
+	
+	
+</beans>
